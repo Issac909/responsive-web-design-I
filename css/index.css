@@ -24,7 +24,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 2;
+	line-height: 1.5;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%;
+	padding: 0;
 }
 ol, ul {
 	list-style: none;
@@ -45,8 +50,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+
     max-width: 100%;
 }
 
@@ -115,6 +119,7 @@ align-items: center;
 
 .mainHeading h1{
 	font-size: 80px;
+	text-align: center;
 }
 
 .mainButton{
@@ -145,7 +150,7 @@ section{
 }
 
 section div{
-	margin: 40px auto;
+	padding: 1%;
 
 
 }
@@ -157,7 +162,13 @@ section div{
 	justify-content: space-between;
 	}
 
-
+.row1 >.textBlock {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 3%;
+	align-items: flex-start;
+}
 
 .row2{
 	width: 100%;
