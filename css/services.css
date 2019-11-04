@@ -1,0 +1,157 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+header img{
+    width: 100%;
+}
+.top {
+    display: flex; 
+    justify-content: space-between;
+}
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+}
+.servicesHeader-img {
+    display: flex;
+    align-items: stretch;
+    margin: 35px 0;
+}
+
+.servicesHeader {
+	padding-bottom: 45px;
+	border-bottom: 1px solid black;
+}
+
+.servicesHeader h2 {
+	font-size: 28px;
+}
+
+.serviceContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 100px 0px;
+
+	border-bottom: 3px solid black;
+}
+
+.serviceBlock {
+	width: 420px;
+	border: 1px solid black;
+	margin-bottom: 40px;
+	background-color: whitesmoke;
+    padding: 15px;
+    text-align: center;
+}
+
+.serviceBlock button {
+	margin-top: 15px;
+	background-color: white;
+	padding: 8px 35px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+
+.serviceFacts {
+	display: flex;
+	padding-top: 40px;
+	margin-bottom: 100px;
+	justify-content: space-between;
+    max-width: 100%;
+}
+
+.factsContainer {
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	line-height: 1.8;
+    width: 40%;
+}
+
+.factsContainer ul {
+	margin-top: 25px;
+}
+
+.factsContainer ul li {
+	list-style-type: square;
+	padding-left: 20px;
+	margin-left: 15px;
+}
+
+.services-info-img {
+	width: 30%;
+
+}
+
+.footer {
+  	text-align: center;
+	 font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .servicesHeader {
+        text-align: center;
+        padding: 2% 2% 5% 2%;
+    }
+    .serviceContainer {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .serviceFacts {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .services-info-img {
+        width: 60%;
+    }
+
+    .factsContainer {
+        margin-top: 3em;
+
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .factsContainer h4 {
+        margin-left: 90px;
+    }
+    .factsContainer p {
+        width: 50%;
+    }
+    .responsive {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .serviceFacts {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+    .servicesHeader {
+        padding-bottom: 60px;
+    }
+
+    .responsive {
+        flex-direction: column-reverse
+    }
+    .responsive >p {
+        margin-top: 2em;
+        width: 100%;
+    }
+    .services-info-img {
+        width: 90%;
+    }
+    .factsContainer >h4 {
+        margin-left: 0;
+    }
+}
